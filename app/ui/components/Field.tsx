@@ -21,7 +21,7 @@ export default function Field({ value, setValue, label, type = 'text' }: Props) 
                 type={type}
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
-                className={clsx("rounded-lg py-2 px-3 text-sm text-muted-foreground outline-none border-1", { "border-primary": focused, "border-border": !focused })}
+                className={clsx("rounded-lg py-2.5 px-3 text-sm text-muted-foreground outline-none border-1", { "border-primary": focused, "border-border": !focused })}
                 onFocus={() => setFocused(true)}
                 onBlur={() => setFocused(false)}
                 placeholder={`Masukkan ${label}...`}

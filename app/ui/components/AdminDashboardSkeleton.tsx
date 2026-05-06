@@ -8,15 +8,15 @@ export default function AdminDashboardSkeleton() {
             </div>
 
             <div className="p-3 flex flex-col gap-3 bg-white">
-                <div className="w-30 h-2 rounded-lg bg-secondary" />
+                <div className="w-30 h-2 md:h-3 rounded-lg bg-secondary" />
 
                 <div className="flex items-center gap-2 w-full">
-                    <div className="flex-1 h-10 bg-secondary rounded-lg" />
-                    <div className="flex-1 h-10 bg-secondary rounded-lg" />
-                    <div className="flex-1 h-10 bg-secondary rounded-lg" />
+                    <div className="flex-1 h-10 md:h-20 bg-secondary rounded-md" />
+                    <div className="flex-1 h-10 md:h-20 bg-secondary rounded-md" />
+                    <div className="flex-1 h-10 md:h-20 bg-secondary rounded-md" />
                 </div>
 
-                <div className="w-full h-20 bg-secondary rounded-lg hidden md:block" />
+                <div className="w-full h-30 bg-secondary rounded-md hidden md:block" />
             </div>
         </div>
     );
