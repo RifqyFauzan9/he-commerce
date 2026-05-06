@@ -10,7 +10,7 @@ export default function Page() {
                     <div className="rounded-lg p-2 bg-primary">
                         <ShoppingCart size={18} className="text-primary-foreground" />
                     </div>
-                    <h1 className="font-bold text-lg">Admin Store</h1>
+                    <h1 className="font-bold text-lg">HeniMart</h1>
                 </div>
 
                 <AdminDashboardSkeleton />
@@ -21,7 +21,7 @@ export default function Page() {
                     <div className="rounded-lg p-2 bg-primary">
                         <ShoppingCart size={18} className="text-primary-foreground" />
                     </div>
-                    <h1 className="font-bold text-lg">Admin Store</h1>
+                    <h1 className="font-bold text-lg">HeniMart</h1>
                 </div>
                 <h1 className="text-xl text-center font-bold mb-1 md:text-left">Admin Login</h1>
                 <p className="text-center text-sm text-muted-foreground mb-6 md:text-left">Masuk ke panel kontrol e-commerce Anda.</p>
