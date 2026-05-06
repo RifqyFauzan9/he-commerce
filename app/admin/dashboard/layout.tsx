@@ -1,9 +1,10 @@
 import { Menu, Leaf, BellDot, LayoutDashboard, Box, ShoppingCart, Cog } from "lucide-react"
+import Link from "next/link"
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     return (
         <div>
-            <header className="flex items-center justify-between bg-white p-5 border-b border-border">
+            <header className="fixed top-0 right-0 left-0 flex items-center justify-between bg-white p-5 border-b border-border">
                 <div className="flex items-center gap-4">
                     <Menu size={26} strokeWidth={2} />
                     <div className="flex items-center gap-2">
@@ -23,22 +24,22 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             {children}
 
             <footer className="fixed right-0 left-0 bottom-0 h-20 bg-white border-t border-border flex items-stretch">
-                <div className="flex-1 flex flex-col gap-1 items-center justify-center text-primary">
+                <Link href="/admin/dashboard" className="flex-1 flex flex-col gap-1 items-center justify-center text-primary">
                     <LayoutDashboard />
                     <p className="text-sm font-medium">Dashboard</p>
-                </div>
-                <div className="flex-1 flex flex-col gap-1 items-center justify-center text-muted-foreground">
+                </Link>
+                <Link href="/admin/dashboard/products" className="flex-1 flex flex-col gap-1 items-center justify-center text-muted-foreground">
                     <Box />
                     <p className="text-sm font-medium">Produk</p>
-                </div>
-                <div className="flex-1 flex flex-col gap-1 items-center justify-center text-muted-foreground">
+                </Link>
+                <Link href="/admin/dashboard/orders" className="flex-1 flex flex-col gap-1 items-center justify-center text-muted-foreground">
                     <ShoppingCart />
                     <p className="text-sm font-medium">Pesanan</p>
-                </div>
-                <div className="flex-1 flex flex-col gap-1 items-center justify-center text-muted-foreground">
+                </Link>
+                <Link href="/admin/dashboard/settings" className="flex-1 flex flex-col gap-1 items-center justify-center text-muted-foreground">
                     <Cog />
                     <p className="text-sm font-medium">Settings</p>
-                </div>
+                </Link>
             </footer>
         </div>
     )
